@@ -1,0 +1,258 @@
+<html>
+<head>
+    <title>HTML CSS Test</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;     /* To space the columns evenly */
+            background-color: whitesmoke;
+            width: 60%;
+            margin: auto;
+            height: 710px;
+            box-shadow: 2px 2px 2px rgb(224, 224, 194);
+        }
+
+        .column {
+            flex: 1;                            /* Make both columns flexible */
+            margin: 10px;                       /* Add spacing between columns */
+            width: 50%;
+            height: 500px;
+        }
+
+        .chatbox {
+            background-color: rgb(244, 244, 230);
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 580px;                    /* Set a fixed height or adjust as needed  */
+            width: auto;    
+            box-shadow: 2px 2px 2px peachpuff;       
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 5px;
+            background-color: rgb(243, 239, 239);
+            border: 1px solid gray;
+            border-radius: 5px;
+            width: fit-content;
+            color: black;
+        }
+
+        .usermessage{
+            background-color: rgb(223, 219, 219);
+            color: black;
+            margin-left: auto;
+            border: 1px solid gray;
+        }
+
+        u{
+            color: blue;
+        }
+
+        .time-right {
+            float: right;
+            color: gray;
+            font-size: x-small;
+        }
+
+        
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            margin-right: 10px;
+            background-color: whitesmoke;
+            width: 80%;
+        }
+
+        .chat-input {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .emoji-button,
+        .attachment-button
+        {
+            background: none;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 5px;
+            color: grey;
+        }
+
+        .volume-button,
+        .external-button
+        {
+            background: none;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 5px;
+            color: grey;
+        }
+
+        span{
+            color: grey;
+            padding-left: 140px;
+        }
+
+        span u{
+            color: grey;
+        }
+
+        .navbar{
+            background-color: rgb(30, 30, 147);
+            height: 60px;
+            width: 100%;
+            margin-top: 10px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .navbar-right {
+            float: right;
+            margin-top: 5px;
+        }
+
+        .arrow-button,
+        .window-button
+        {
+            background: none;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 25px;
+            margin-left: 5px;
+            color: azure;
+        }
+
+
+        .img{
+            border-radius: 60%;
+            height: 60px;
+            width: 60px;
+            border-color: whitesmoke;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            object-fit: cover;
+            object-position: center;
+            border: 3px solid white;
+        }
+
+        .testimg{
+            height: 400px;
+            width: 55%;
+            padding-top: 210px;
+            object-fit: cover;
+            object-position: center;
+            padding-bottom: 0px;
+        }
+
+        .navbar1{
+            background-color: rgb(68, 114, 196);
+            height: 40px;
+            width: 90%;
+            display: flex;
+            border-radius: 5px;
+            padding-left: 14px;
+            padding-top: 14px;
+            padding-right: 14px;
+        }
+
+        .navbar1 a{
+            color: azure;
+            text-align: left;
+            text-decoration: none;
+            font-size: 20px;
+            float: none;
+            display: inline-block;
+        }
+
+        .navbar-downright{
+            float: right;
+            padding-left: 150px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">    <!-- Content for the first column -->
+            <center><img src="chat.jpg.jpeg" class="testimg">
+            <nav>            <!-- Navigation bar left -->
+                <div class="navbar1">
+                    <a href="#">Contact Us!</a>
+                
+                <div class="navbar-downright">    <!-- Navigation bar right -->
+                    <a href="#"><i class="fa fa-fw fa-message"></i></a> 
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i></a> 
+                    <a href="#"><i class="fa fa-fw fa-phone"></i></a> 
+                    <a href="#"><i class="fa fa-twitter"></i></a> 
+                    <a href="#"><i class="fa fa-map-marker"></i></a> 
+                </div>
+                </div>
+            </nav></center>
+        </div>
+        <div class="column">    <!-- Content for the second column -->
+            <div class="navbar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZkL9Aeo348J0UboD4aZyBa3FBS-1bbhhsw&usqp=CAU" class="img">
+                
+               <div class="navbar-right"><b style="color: white; text-align: left; padding-right: 160px; font-size: 20px;">Robert</b>
+                <button class="arrow-button"><i class="fa fa-caret-square-o-down"></i></button>
+                <button class="window-button"><i class="fa fa-window-close-o "></i></button>
+            </div>
+        </div> 
+            <div class="chatbox">
+                <div class="message usermessage">
+                    <p>Hi, is Pure Chat really free?</p>
+                </div>
+                <div class="message">
+                    <p>It sure is. Unlimited chats. Umlimited Operators!</p>
+                </div>
+                <div class="message usermessage">
+                    <p>Wow, that's great!👍 How do I install it?</p>
+                </div> 
+                <div class="message">
+                    <p>Here's a guide to help you setup Pure Chat:</p>
+                </div>
+                <div class="message">
+                    <p><u><i class="fa fa-comment "></i>  Add Live Chat to Your Website</u></br> Pure Chat is the preferred live chat solution for small to mid-</p>
+                </div>
+                <div class="message usermessage">
+                    <p>That's great! Signing up now...</p>
+                    <span class="time-right">Just Now</span>
+                </div>
+                <div><typing>Robert is typing...</typing>
+            
+                    <div class="chat-input">
+                        <input type="text" placeholder="Type your message...">
+                        <button class="emoji-button">😀</button>
+                        <button class="attachment-button"><i class="fa fa-paperclip"></i></button>
+                    </div>
+                    <div>
+                        <button class="volume-button"><i class="fa fa-volume-up "></i></button>
+                        <button class="external-button"><i class="fa fa-external-link "></i></button>
+                        <label>
+                        <span> Powered by <u>Pure Chat</u></span></label>
+                    </div>
+                </div>
+            </div>
+            </div>    
+    </div>
+</body>
+</html>
+
+
+</body>
+</html>
